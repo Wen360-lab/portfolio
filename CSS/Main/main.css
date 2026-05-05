@@ -51,7 +51,7 @@ main {
 /* Photo de profil */
 .tof-profil {
     height: 250px;
-    background-image: url('../../Assets/Images/photoDeProfil.png');
+    background-image: url('/Assets/Images/photoDeProfil.png');
     border-radius: 0.62rem;
     margin: 1.25rem;
     background-size: cover;
