@@ -126,38 +126,94 @@ main {
 }
 /* --------------------------------------------------------------------------------------------------------------- */
 
+#competences {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Le conteneur des compétences*/
 .competences-container {
     display: grid;
-    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
     margin: 10px auto;
     width: 100%;
     max-width: 400px;
-    gap: 1rem;
-    
+    gap: 1rem;  
 }
+/* --------------------------------------------------------------------------------------------------------------- */
 
+/* Les compétences elles-mêmes */
 .comp {
     display: flex;
     align-items: center;
-    background-color: #5e5e5d;
+    background-color: #000000;
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
 }
+/* --------------------------------------------------------------------------------------------------------------- */
 
-.icone-comp {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-}
 
-.nom-competence {
-    font-family: Sora;
+
+/* Le titre de chaque compétences */
+.titre-comp {
+    font-family: Sora;/* Modifier !*/
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
+    text-align: center;
 }
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* Les compétences elles-mêmes */
+.comp-techniques, .comp-transverses, .comp-qualites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* Les points de chaque compétence */
+.les-points {
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: justify;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+/* Texte d'accentuation sur les technologies */
+.span {
+    color: #5e5e5d;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+.les-points ul li {
+    font-family: 'Instrument serif'; /*Déjà modifier !*/
+    font-size: 1.35rem;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+    list-style-type: lower-greek;
+}
+
+.competence {
+    font-family: Sora;/*À modifier !*/
+    margin: 10px 0;
+    font-size: 1rem;
+}
+/* --------------------------------------------------------------------------------------------------------------- */
 
 .box-projet {
     display: flex;
@@ -267,10 +323,14 @@ main {
         font-size: 1rem;
     }
     
-    /* Compétences - 2 colonnes */
+    /* Compétences - 3 colonnes */
     .competences-container {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 600px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+    }
+
+    .titre-comp {
+        font-size: 17px;
     }
     
     .icone-comp {
@@ -344,11 +404,20 @@ main {
         font-size: 1.12rem;
     }
     
-    /* Compétences - 3 colonnes */
     .competences-container {
         grid-template-columns: repeat(3, 250px);
         width: auto;
         max-width: none;
+        text-align: center;
+    }
+    
+    .titre-comp {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .les-points ul li {
+        list-style-type: none;
     }
     
     .icone-comp {
