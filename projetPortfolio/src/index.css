@@ -1,21 +1,33 @@
-/* Inmport des polices depuis Google Font */
+/* Import des polices depuis Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
-
 
 @import "tailwindcss";
 
 :root {
+  /* Palette complète de la charte graphique */
+  --blue-light: #8ECAE6;
+  --teal: #219EBC;
+  --navy: #023047;
+  --yellow: #FFB703;
+  --orange: #FB8500;
+
+  /* Rôles sémantiques (basés sur la palette) */
+  --bg: var(--blue-light);
+  --bg-dark: var(--navy);
+  --accent: var(--orange);
+  --accent-secondary: var(--yellow);
+
   --text: #FFFFFF;
+  --text-dark: var(--navy);
   --text-h: #f3f4f6;
-  --bg: #8ECAE6;
-  --accent: #FB8500;
-  --accent-bg:#FB8500;
+
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --logo-font: 'Holtwood One SC', serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -35,15 +47,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg: var(--blue-light);
+    --bg-dark: var(--navy);
+    --accent: var(--orange);
+    --accent-secondary: var(--yellow);
     --text: #FFFFFF;
+    --text-dark: var(--navy);
     --text-h: #f3f4f6;
-    --bg: #8ECAE6;
-    --accent: #FB8500;
-    --accent-bg:#FB8500;
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
-
 }
 
 #root {
@@ -77,6 +90,7 @@ h1 {
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -86,7 +100,7 @@ h2 {
     font-size: 20px;
   }
 }
+
 p {
   margin: 0;
 }
-
