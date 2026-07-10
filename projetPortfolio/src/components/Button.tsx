@@ -12,7 +12,7 @@ export default function Button({ href, children, download = false }: ButtonProps
       <motion.a
         href={href}
         download={download}
-        className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow"
+        className="inline-block rounded-xl px-5 py-3 text-sm font-nav font-semibold text-white bg-accent shadow"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
