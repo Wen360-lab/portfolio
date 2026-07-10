@@ -1,11 +1,22 @@
-
+import Header from './components/Header' 
+import Hero from './components/Hero' 
+import About from './components/About' 
+import Competences from './components/Competences' 
+import Technologies from './components/Technologies' 
+import Projets from './components/Projets' 
+import './index.css'
 
 function App() {
 
 
   return (
-    <> 
-     <h1>Bienvenue sur le nouveau Portfolio</h1>
+     <>
+     <Header/>
+     <Hero/>
+     <About/>
+     <Competences/>
+     <Technologies/>
+     <Projets/>
     </>
   )
 }
