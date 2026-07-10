@@ -1,10 +1,11 @@
 import { motion } from 'motion/react'
+const BASE = import.meta.env.BASE_URL
 
 export default function Hero() {
   return (
     <section
       id="accueil" className="relative overflow-hidden px-6 py-6 md:py-24 text-center bg-cover bg-center m-6 rounded-2xl"
-      style={{ backgroundImage: `url(/Images/BgHero.jpg)` }}
+      style={{ backgroundImage: `url(${BASE}Images/BgHero.jpg)` }}
     >
       <div className="flex flex-col">
         <motion.h1

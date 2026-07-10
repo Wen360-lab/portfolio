@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { FiHome, FiPhone, FiMail } from 'react-icons/fi'
+const BASE = import.meta.env.BASE_URL
 
 const contacts = [
   {
@@ -44,7 +45,7 @@ export default function Contact() {
         {/* Image de fond avec le titre */}
         <div
             className="relative flex items-center justify-center h-64 bg-cover bg-center"
-            style={{ backgroundImage: `url(/Images/Libreville.jpg)` }}
+            style={{ backgroundImage: `url(${BASE}Images/Libreville.jpg)`}}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50" />

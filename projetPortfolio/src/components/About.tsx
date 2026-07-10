@@ -3,6 +3,8 @@ import { motion } from 'motion/react'
 import Button from './Button'
 import Stats from './Stats'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function About() {
     return (
         <section id="apropos" className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-35 bg-white px-6 py-6 w-full">
@@ -64,7 +66,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
             >
-                <img src="/Images/wen.png" alt="Profil tof" className="h-auto w-auto" />
+                <img src={`${BASE}/Images/wen.png`} alt="Profil tof" className="h-auto w-auto" />
             </motion.div>
 
 

@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -8,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md border-b border-white/20 w-full shadow">
 
       {/* Logo */}
-      <img src="/Assets/icones/Logo.svg" alt="Logo PW" className="h-15 w-40" />
+      <img src={`${BASE}/static/icones/Logo.svg`} alt="Logo PW" className="h-15 w-40" />
 
       {/* Navigation - cachée sur mobile, visible à partir de md */}
       <nav className="hidden lg:block">

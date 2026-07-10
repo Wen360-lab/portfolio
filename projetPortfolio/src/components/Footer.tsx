@@ -1,4 +1,5 @@
 import { FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa'
+const BASE = import.meta.env.BASE_URL
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row gap-10 justify-between text-left">
         {/* Logo + tagline */}
         <div className="md:w-1/4">
-          <img src="/Assets/icones/Logo.svg" alt="Logo PW" className="h-10 mb-4" />
+          <img src={`${BASE}/static/icones/Logo.svg`} alt="Logo PW" className="h-10 mb-4" />
           <p className="text-white/80 text-sm">
             Des interfaces propres, intuitives et fonctionnelles.
           </p>

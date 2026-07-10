@@ -1,24 +1,26 @@
 import { motion } from 'motion/react'
 
+const BASE = import.meta.env.BASE_URL
+
 const projects = [
   {
     titre: 'Tech Manager Dashboard',
-    image: '/Images/tech-manager.png',
+    image:  `${BASE}Images/tech-manager.png`,
     description: "Dashboard de gestion d'équipements informatiques avec vue d'ensemble statistique. Interface comprenant une sidebar de navigation, des cartes de données et un tableau détaillé des appareils.",
   },
   {
     titre: 'Auto Ecole - Landing Page',
-    image: '/Images/formation-web.png',
+    image:  `${BASE}Images/formation-web.png`,
     description: "Landing page pour une auto-école présentant les programmes de formation. Design coloré avec sections Suivi personnalisé et Préparation à l'examen mises en avant visuellement.",
   },
   {
     titre: 'Bacho',
-    image: '/Images/bacho.png',
+    image:  `${BASE}/Images/bacho.png`,
     description: "Plateforme web pour aider les lycéens à préparer leur épreuve de gymnastique au baccalauréat. L'application permet de créer des fiches d'enchaînements en sélectionnant des figures depuis une interface interactive.",
   },
   {
     titre: "Page d'inscription",
-    image: '/Images/front-end.png',
+    image: `${BASE}/Images/front-end.png`,
     description: "Landing page pour une auto-école présentant les programmes de formation. Design coloré avec sections Suivi personnalisé et Préparation à l'examen mises en avant visuellement.",
   },
 ]
