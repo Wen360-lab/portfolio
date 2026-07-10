@@ -59,7 +59,7 @@ export default function Projets() {
                     <p className="text-navy/80 mb-4">{project.description}</p>
                 
                     <a href="#"
-                        className="inline-block rounded-xl px-5 py-2 mt-4 text-sm font-semibold text-white bg-accent"
+                        className="inline-block rounded-xl px-5 py-2 mt-4 text-sm font-semibold shadow border-2 border-yellow text-white bg-accent hover:bg-yellow hover:border-orange"
                     >
                         Consulter
                     </a>
