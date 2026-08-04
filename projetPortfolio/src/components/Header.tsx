@@ -27,7 +27,7 @@ export default function Header() {
       
         <a href={`${BASE}cv.pdf`}
         download
-        className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 opacity-100 bg-accent shadow hover:opacity-70 transition-opacity duration-300 border-yellow"
+        className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 opacity-100 bg-accent shadow hover:bg-amber-700 transition-opacity duration-300 border-yellow"
       >
         Téléchargez mon CV
       </a>
