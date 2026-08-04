@@ -11,7 +11,7 @@ import './index.css'
 
 function App() {
   return (
-     <>
+    <>
      <Header/>
      <Hero/>
      <About/>

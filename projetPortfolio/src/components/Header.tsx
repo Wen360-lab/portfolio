@@ -52,7 +52,7 @@ export default function Header() {
             <li className="hover:text-teal duration-300"><a href="#contacts" onClick={() => setIsOpen(false)}>Contacts</a></li>
             <li>
               
-                <a href="/cv.pdf"
+                <a href="./cv.pdf"
                 download
                 className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow"
               >
