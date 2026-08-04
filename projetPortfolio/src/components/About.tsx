@@ -49,7 +49,7 @@ export default function About() {
                 </motion.p>
 
                 {/* Le bouton Télécharger mon CV */}
-                <Button href="/cv.pdf" download>Téléchargez mon cv</Button>
+                <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
 
                 {/* La ligne qui les séparent (BBouton et Stats) */}
                 <hr className='border-gray-300 mt-10 w-full'/>
@@ -66,7 +66,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
             >
-                <img src={`${BASE}/Images/wen.png`} alt="Profil tof" className="h-auto w-auto" />
+                <img src={`${BASE}Images/wen.png`} alt="Profil tof" className="h-auto w-auto" />
             </motion.div>
 
 

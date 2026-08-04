@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row gap-10 justify-between text-left">
         {/* Logo + tagline */}
         <div className="md:w-1/4">
-          <img src={`${BASE}/static/icones/Logo.svg`} alt="Logo PW" className="h-10 mb-4" />
+          <img src={`${BASE}static/icones/Logo.svg`} alt="Logo PW" className="h-10 mb-4" />
           <p className="text-white/80 text-sm">
             Des interfaces propres, intuitives et fonctionnelles.
           </p>
@@ -28,8 +28,8 @@ export default function Footer() {
           <h2 className="text-white mb-4">Réseaux</h2>
           <ul className="flex flex-col gap-3 text-white text-xl">
             <li><a href="https://wa.me/24177478646" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
-            <li><a href="https://linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
-            <li><a href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+            <li><a href="https://www.linkedin.com/in/wen-joanel-makanaga-etchou-73483a359/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+            <li><a href="https://github.com/Wen360-lab" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
           </ul>
         </div>
 

@@ -13,7 +13,7 @@ export default function CTA() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.3 }}
             >
-                <img src={`${BASE}/Images/wen.png`} alt="Profil tof" className="h- w-auto" />
+                <img src={`${BASE}Images/wen.png`} alt="Profil tof" className="h- w-auto" />
             </motion.div>
 
             <div className='flex flex-col gap-4 items-center'>
@@ -21,7 +21,7 @@ export default function CTA() {
                 <p className='font-nav text-sm text-justify pt-6 text-white/80'>Toutes les infos essentielles sur mon profil,<br /> en un document.</p>
 
                 {/* Le bouton Télécharger mon CV */}
-                <Button href="/cv.pdf" download>Téléchargez mon cv</Button>
+                <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
             </div>
         </section>
     )

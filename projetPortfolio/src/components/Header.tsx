@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md border-b border-white/20 w-full shadow">
 
       {/* Logo */}
-      <img src={`${BASE}/static/icones/Logo.svg`} alt="Logo PW" className="h-15 w-40" />
+      <img src={`${BASE}static/icones/Logo.svg`} alt="Logo PW" className="h-15 w-40" />
 
       {/* Navigation - cachée sur mobile, visible à partir de md */}
       <nav className="hidden lg:block">
@@ -25,7 +25,7 @@ export default function Header() {
 
       {/* CTA - caché sur mobile */}
       
-        <a href="/cv.pdf"
+        <a href={`${BASE}cv.pdf`}
         download
         className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 opacity-100 bg-accent shadow hover:opacity-70 transition-opacity duration-300 border-yellow"
       >
@@ -52,7 +52,7 @@ export default function Header() {
             <li className="hover:text-teal duration-300"><a href="#contacts" onClick={() => setIsOpen(false)}>Contacts</a></li>
             <li>
               
-                <a href="./cv.pdf"
+                <a href={`${BASE}cv.pdf`}
                 download
                 className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow"
               >
