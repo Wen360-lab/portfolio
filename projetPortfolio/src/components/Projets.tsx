@@ -4,24 +4,22 @@ const BASE = import.meta.env.BASE_URL
 
 const projects = [
   {
-    titre: 'Tech Manager Dashboard',
-    image:  `${BASE}Images/tech-manager.png`,
-    description: "Dashboard de gestion d'équipements informatiques avec vue d'ensemble statistique. Interface comprenant une sidebar de navigation, des cartes de données et un tableau détaillé des appareils.",
+    titre: 'Présence - la clé du succès',
+    image:  `${BASE}Images/presence.png`,
+    description: "Présence est une application web de gestion de l'assiduité scolaire et universitaire. Elle possède une architechture simple avec des technologies modernes (Reactjs, Nextjs, Tailwindcss, Motion etc.). Son rôle : permettre un meilleur suivi de l'assiduité des apprenants.",
+    link: "https://presence-coral.vercel.app/"
   },
   {
-    titre: 'Auto Ecole - Landing Page',
-    image:  `${BASE}Images/formation-web.png`,
-    description: "Landing page pour une auto-école présentant les programmes de formation. Design coloré avec sections Suivi personnalisé et Préparation à l'examen mises en avant visuellement.",
+    titre: 'Portail Portfolio',
+    image:  `${BASE}Images/portailPortfolio.png`,
+    description: "Le Portail Portfolio est une plateforme web destinée à promouvoir les développeurs de la promo 14 de l'École 241 issue du programme D'Click initié par l'OIF. Il s'agit plus exactement d'un projet collaboratif dans lequel j'ai contribué.",
+    link: "https://portail-portfolio-v3-deploy-1.vercel.app/"
   },
   {
-    titre: 'Bacho',
-    image:  `${BASE}/Images/bacho.png`,
-    description: "Plateforme web pour aider les lycéens à préparer leur épreuve de gymnastique au baccalauréat. L'application permet de créer des fiches d'enchaînements en sélectionnant des figures depuis une interface interactive.",
-  },
-  {
-    titre: "Page d'inscription",
-    image: `${BASE}/Images/front-end.png`,
-    description: "Landing page pour une auto-école présentant les programmes de formation. Design coloré avec sections Suivi personnalisé et Préparation à l'examen mises en avant visuellement.",
+    titre: 'Gestion Emprunt Ordinateurs',
+    image:  `${BASE}Images/gestionOrdinateurs.png`,
+    description: "Application web complète de gestion des emprunts d'ordinateurs pour l'École 241. Développée en équipe, elle permet d'assigner, suivre et gérer le parc informatique en temps réel.",
+    link: "https://gestion-emprunt-ordi.vercel.app/"
   },
 ]
 
@@ -58,7 +56,8 @@ export default function Projets() {
                     <h2 className="text-navy mb-2">{project.titre}</h2>
                     <p className="text-navy/80 mb-4">{project.description}</p>
                 
-                    <a href="#"
+                    <a href={project.link} 
+                        target="_blank" rel="noopener noreferrer"
                         className="inline-block rounded-xl px-5 py-2 mt-4 text-sm font-semibold shadow border-2 border-yellow text-white bg-accent hover:bg-yellow hover:border-orange"
                     >
                         Consulter

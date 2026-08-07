@@ -19,18 +19,19 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{duration: 0.5, delay: 0.4}}
                 >
-                    A propos de moi
+                    À propos de moi
                 </motion.p>
 
                 {/* Mon nom complet */}
                 <motion.p 
-                    className="text-yellow text-xl text-left font-nav mb-10"
+                    className="text-yellow text-3xl text-left font-nav mb-10 font-extrabold"
                     initial={{opacity:0, y:20}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{ once: true }}
                     transition={{duration: 0.7, delay: 0.5}}
                 >
-                    Je suis MAKANAGA ETCHOU WEN JOANEL
+                    Je suis MAKANAGA ETCHOU WEN JOANEL <br />
+                    <span className='font-medium'>Développeur Front-end</span>
                 </motion.p>
 
                 {/* La description */}
@@ -41,11 +42,11 @@ export default function About() {
                     viewport={{ once: true }}
                     transition={{duration: 0.7, delay: 0.6}} 
                 >
-                    "Développeur web en formation, curieux de nature.
-                    Entre projets d'école et collaborations en équipe,
-                    je construis des interfaces fonctionnelles et soignées,
-                    en apprenant continuellement de nouvelles façons de créer sur le web. 
-                    Je code, mais je pense d'abord en expérience : chaque détail doit avoir un sens."
+                   Passionné par la création d'interfaces claires, 
+                   intuitives et performantes, j'aime relever de nouveaux défis, 
+                   explorer de nouvelles technologies et transformer des idées en expériences web utiles.
+                    Pour moi, un bon produit ne se limite pas à fonctionner : il doit être agréable à utiliser et conçu avec intention.
+
                 </motion.p>
 
                 {/* Le bouton Télécharger mon CV */}

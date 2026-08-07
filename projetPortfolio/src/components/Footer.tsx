@@ -18,7 +18,7 @@ export default function Footer() {
           <h2 className="text-white mb-4">Liens utiles</h2>
           <ul className="flex flex-col gap-2 text-white/80 text-sm">
             <li><a href="/cv.pdf" download>Télécharger cv</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#projets">projets</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
         </div>
@@ -26,14 +26,14 @@ export default function Footer() {
         {/* Réseaux */}
         <div>
           <h2 className="text-white mb-4">Réseaux</h2>
-          <ul className="flex flex-col gap-3 text-white text-xl">
+          <ul className="flex gap-3 text-white text-xl">
             <li><a href="https://wa.me/24177478646" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a></li>
             <li><a href="https://www.linkedin.com/in/wen-joanel-makanaga-etchou-73483a359/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
             <li><a href="https://github.com/Wen360-lab" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
           </ul>
         </div>
 
-        {/* Légal */}
+        {/* Légal
         <div>
           <h2 className="text-white mb-4">Légal</h2>
           <ul className="flex flex-col gap-2 text-white/80 text-sm">
@@ -41,7 +41,7 @@ export default function Footer() {
             <li><a href="#confidentialite">Politique de confidentialité</a></li>
             <li><a href="#cgu">CGU</a></li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       {/* Séparateur */}

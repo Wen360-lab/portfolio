@@ -11,7 +11,7 @@ export default function Stats() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <p className="text-4xl md:text-6xl font-bold text-accent">5+</p>
+        <p className="text-4xl md:text-6xl font-bold text-accent">2+</p>
         <p className="text-sm text-yellow">Projets réalisés</p>
       </motion.div>
       
@@ -23,8 +23,8 @@ export default function Stats() {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.35 }}
       >
-        <p className="text-4xl md:text-6xl font-bold text-accent">10+</p>
-        <p className="text-sm text-yellow">Technologies maîtrisées</p>
+        <p className="text-4xl md:text-6xl font-bold text-accent">8+</p>
+        <p className="text-sm text-yellow">Technos maîtrisées</p>
       </motion.div>
       
       {/* Temps de formation */}
