@@ -14,12 +14,12 @@ export default function Header() {
 
       {/* Navigation - cachée sur mobile, visible à partir de md */}
       <nav className="hidden lg:block">
-        <ul className="flex gap-6 text-sm font-medium font-nav text-text-dark">
-          <li className="hover:text-teal duration-300"><a href="#accueil">Accueil</a></li>
-          <li className="hover:text-teal duration-300"><a href="#apropos">À propos</a></li>
-          <li className="hover:text-teal duration-300"><a href="#competences">Compétences</a></li>
-          <li className="hover:text-teal duration-300"><a href="#projets">Projets</a></li>
-          <li className="hover:text-teal duration-300"><a href="#contacts">Contacts</a></li>
+        <ul className="flex gap-6 text-sm font-medium font-nav text-teal">
+          <li className="hover:text-orange duration-300"><a href="#accueil">Accueil</a></li>
+          <li className="hover:text-orange duration-300"><a href="#apropos">À propos</a></li>
+          <li className="hover:text-orange duration-300"><a href="#competences">Compétences</a></li>
+          <li className="hover:text-orange duration-300"><a href="#projets">Projets</a></li>
+          <li className="hover:text-orange duration-300"><a href="#contacts">Contacts</a></li>
         </ul>
       </nav>
 
@@ -44,12 +44,12 @@ export default function Header() {
       {/* Menu mobile déroulant */}
       {isOpen && (
         <nav className="absolute top-full left-0 w-full bg-white shadow lg:hidden">
-          <ul className="flex flex-col gap-4 p-6 text-sm font-medium font-nav text-text-dark">
-            <li className="hover:text-teal duration-300"><a href="#accueil" onClick={() => setIsOpen(false)}>Accueil</a></li>
-            <li className="hover:text-teal duration-300"><a href="#apropos" onClick={() => setIsOpen(false)}>À propos</a></li>
-            <li className="hover:text-teal duration-300"><a href="#competences" onClick={() => setIsOpen(false)}>Compétences</a></li>
-            <li className="hover:text-teal duration-300"><a href="#projets" onClick={() => setIsOpen(false)}>Projets</a></li>
-            <li className="hover:text-teal duration-300"><a href="#contacts" onClick={() => setIsOpen(false)}>Contacts</a></li>
+          <ul className="flex flex-col gap-4 p-6 text-sm font-medium font-nav text-teal">
+            <li className="hover:text-orange duration-300"><a href="#accueil" onClick={() => setIsOpen(false)}>Accueil</a></li>
+            <li className="hover:text-orange duration-300"><a href="#apropos" onClick={() => setIsOpen(false)}>À propos</a></li>
+            <li className="hover:text-orange duration-300"><a href="#competences" onClick={() => setIsOpen(false)}>Compétences</a></li>
+            <li className="hover:text-orange duration-300"><a href="#projets" onClick={() => setIsOpen(false)}>Projets</a></li>
+            <li className="hover:text-orange duration-300"><a href="#contacts" onClick={() => setIsOpen(false)}>Contacts</a></li>
             <li>
               
                 <a href={`${BASE}cv.pdf`}

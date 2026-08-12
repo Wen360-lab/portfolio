@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="md:w-1/4">
           <img src={`${BASE}static/icones/Logo.svg`} alt="Logo PW" className="h-10 mb-4" />
           <p className="text-white/80 text-sm">
-            Des interfaces propres, intuitives et fonctionnelles.
+            Des interfaces soignées, intuitives et fonctionnelles.
           </p>
         </div>
 

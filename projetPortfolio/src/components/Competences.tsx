@@ -2,7 +2,7 @@ import { motion } from 'motion/react'
 
 export default function Competences() {
   return (
-    <section id="competences" className="bg-teal px-6 py-16 text-center">
+    <section id="competences" className="bg-blue-light px-6 py-16 text-center">
         {/* Le titre de la section Compétences */}
         <motion.h1
             className="text-white font-healding pb-12"
@@ -23,7 +23,7 @@ export default function Competences() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.2 }}
             >
-                <h2 className="text-yellow mb-4">Compétences techniques</h2>
+                <h2 className="text-teal mb-4">Compétences techniques</h2>
 
                 <p className="font-nav font-semibold text-white">Développement Front-end</p>
                 <p className="text-white/80 mb-4">
@@ -47,7 +47,7 @@ export default function Competences() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.35 }}
             >
-                <h2 className="text-yellow mb-4">Compétences transversales et méthodologies</h2>
+                <h2 className="text-teal mb-4">Compétences transversales et méthodologies</h2>
 
                 <p className="font-nav font-semibold text-white">Veille technologique</p>
                 <p className="text-white/80 mb-4">
@@ -84,7 +84,7 @@ export default function Competences() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.5 }}
             >
-                <h2 className="text-yellow mb-4">Qualités personnelles</h2>
+                <h2 className="text-teal mb-4">Qualités personnelles</h2>
 
                 <p className="font-nav font-semibold text-white">Résolution de problèmes</p>
                 <p className="text-white/80 mb-4">

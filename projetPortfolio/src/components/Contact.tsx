@@ -45,7 +45,7 @@ export default function Contact() {
         {/* Image de fond avec le titre */}
         <div
             className="relative flex items-center justify-center h-64 bg-cover bg-center"
-            style={{ backgroundImage: `url(${BASE}Images/Libreville.jpg)`}}
+            style={{ backgroundImage: `url(${BASE}Images/Libreville.png)`}}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50" />
