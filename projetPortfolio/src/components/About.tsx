@@ -1,6 +1,7 @@
 
 import { motion } from 'motion/react'
 import Button from './Button'
+import Buttonspecial from './Buttonspecial'
 import Stats from './Stats'
 
 const BASE = import.meta.env.BASE_URL
@@ -31,7 +32,7 @@ export default function About() {
                     transition={{duration: 0.7, delay: 0.5}}
                 >
                     Je suis MAKANAGA ETCHOU WEN JOANEL <br />
-                    <span className='font-medium'>Développeur Front-end</span>
+                    <span className='font-medium text-2xl'>Développeur web Front-end Junior</span>
                 </motion.p>
 
                 {/* La description */}
@@ -49,8 +50,11 @@ export default function About() {
 
                 </motion.p>
 
-                {/* Le bouton Télécharger mon CV */}
-                <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
+                {/* Le bouton Télécharger mon CV et consulter mon Github */}
+                <div className='flex flex-col sm:flex-row gap-4'>
+                    <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
+                    <Buttonspecial href='https://github.com/Wen360-lab' external>Consultez mon Github</Buttonspecial>
+                </div>
 
                 {/* La ligne qui les séparent (BBouton et Stats) */}
                 <hr className='border-gray-300 mt-10 w-full'/>

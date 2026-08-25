@@ -20,6 +20,12 @@ const projects = [
     image:  `${BASE}Images/gestionOrdinateurs.png`,
     description: "Application web complète de gestion des emprunts d'ordinateurs pour l'École 241. Développée en équipe, elle permet d'assigner, suivre et gérer le parc informatique en temps réel.",
     link: "https://gestion-emprunt-ordi.vercel.app/"
+  },  
+  {
+    titre: 'Portail Portfolio Pro',
+    image:  `${BASE}Images/portailPortfolioPro.png`,
+    description: "Remaster personnel du portail des développeurs de la Promotion 14 (École 241), initialement conçu en équipe pendant la formation. Reconstruit en conservant l'identité du portail d'origine tout en approfondissant l'architecture du code et le système de design.",
+    link: "https://portail-portfolio-pro.vercel.app/"
   },
 ]
 
