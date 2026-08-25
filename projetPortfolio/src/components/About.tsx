@@ -51,7 +51,7 @@ export default function About() {
                 </motion.p>
 
                 {/* Le bouton Télécharger mon CV et consulter mon Github */}
-                <div className='flex flex-col sm:flex-row gap-4'>
+                <div className='flex flex-col sm:flex-row gap-2 md:gap-4'>
                     <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
                     <Buttonspecial href='https://github.com/Wen360-lab' external>Consultez mon Github</Buttonspecial>
                 </div>

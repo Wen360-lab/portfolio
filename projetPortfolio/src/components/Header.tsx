@@ -27,7 +27,7 @@ export default function Header() {
       
         <a href={`${BASE}cv.pdf`}
         download
-        className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 opacity-100 bg-accent shadow hover:bg-amber-700 transition-opacity duration-300 border-yellow"
+        className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 border-yellow opacity-100 bg-accent shadow hover:bg-teal  duration-300 hover:border-white"
       >
         Téléchargez mon CV
       </a>
@@ -43,7 +43,7 @@ export default function Header() {
 
       {/* Menu mobile déroulant */}
       {isOpen && (
-        <nav className="absolute top-full left-0 w-full bg-white shadow lg:hidden">
+        <nav className="absolute top-full left-0 w-full bg-white/70 shadow lg:hidden">
           <ul className="flex flex-col gap-4 p-6 text-sm font-medium font-nav text-teal">
             <li className="hover:text-orange duration-300"><a href="#accueil" onClick={() => setIsOpen(false)}>Accueil</a></li>
             <li className="hover:text-orange duration-300"><a href="#apropos" onClick={() => setIsOpen(false)}>À propos</a></li>
@@ -54,7 +54,7 @@ export default function Header() {
               
                 <a href={`${BASE}cv.pdf`}
                 download
-                className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow"
+                className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow  hover:bg-teal duration-300"
               >
                 Téléchargez mon CV
               </a>

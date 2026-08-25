@@ -74,6 +74,10 @@ body {
   margin: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 
 h1,
 h2 {

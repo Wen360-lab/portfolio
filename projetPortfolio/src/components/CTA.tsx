@@ -17,8 +17,8 @@ export default function CTA() {
             </motion.div>
 
             <div className='flex flex-col gap-4 items-center'>
-                <h2 className='text-white font-hearling'>Téléchargez mon CV</h2>
-                <p className='font-nav text-sm text-justify pt-6 text-white/80'>Toutes les infos essentielles sur mon profil,<br /> en un document.</p>
+                <h1 className='text-white font-hearling'>Téléchargez <br />mon CV</h1>
+                <p className='font-nav text-sm pt-4 text-white/80 text-center'>Toutes les infos essentielles <br />sur mon profil, en un document.</p>
 
                 {/* Le bouton Télécharger mon CV */}
                 <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>

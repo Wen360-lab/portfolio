@@ -14,11 +14,11 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          DES INTERFACES PENSÉES, PAS SEULEMENT CODÉES
+          DES INTERFACES PENSÉES,<br /> PAS SEULEMENT CODÉES
         </motion.h1>
 
         <motion.p
-          className="mt-4 text-2xl text-white/90 font-nav mx-auto"
+          className="mt-4 text-2xl text-white/90 font-nav mx-auto md:px-60 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
