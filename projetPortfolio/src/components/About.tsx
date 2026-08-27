@@ -52,7 +52,7 @@ export default function About() {
 
                 {/* Le bouton Télécharger mon CV et consulter mon Github */}
                 <div className='flex flex-col sm:flex-row gap-2 md:gap-4'>
-                    <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
+                    <Button href={`${BASE}CV_MAKANAGA_ETCHOU_WEN_JOANEL.pdf`} download>Téléchargez mon cv</Button>
                     <Buttonspecial href='https://github.com/Wen360-lab' external>Consultez mon Github</Buttonspecial>
                 </div>
 

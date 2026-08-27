@@ -25,7 +25,7 @@ export default function Header() {
 
       {/* CTA - caché sur mobile */}
       
-        <a href={`${BASE}cv.pdf`}
+        <a href={`${BASE}CV_MAKANAGA_ETCHOU_WEN_JOANEL.pdf`}
         download
         className="hidden lg:inline-block rounded-xl px-5 py-3 text-sm font-semibold font-nav text-white border-2 border-yellow opacity-100 bg-accent shadow hover:bg-teal  duration-300 hover:border-white"
       >
@@ -52,7 +52,7 @@ export default function Header() {
             <li className="hover:text-orange duration-300"><a href="#contacts" onClick={() => setIsOpen(false)}>Contacts</a></li>
             <li>
               
-                <a href={`${BASE}cv.pdf`}
+                <a href={`${BASE}CV_MAKANAGA_ETCHOU_WEN_JOANEL.pdf`}
                 download
                 className="inline-block rounded-xl px-5 py-3 text-sm font-semibold text-white bg-accent shadow  hover:bg-teal duration-300"
               >

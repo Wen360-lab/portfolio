@@ -21,7 +21,7 @@ export default function CTA() {
                 <p className='font-nav text-sm pt-4 text-white/80 text-center'>Toutes les infos essentielles <br />sur mon profil, en un document.</p>
 
                 {/* Le bouton Télécharger mon CV */}
-                <Button href={`${BASE}cv.pdf`} download>Téléchargez mon cv</Button>
+                <Button href={`${BASE}CV_MAKANAGA_ETCHOU_WEN_JOANEL.pdf`} download>Téléchargez mon cv</Button>
             </div>
         </section>
     )
