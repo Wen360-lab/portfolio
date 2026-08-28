@@ -17,7 +17,7 @@ export default function Footer() {
         <div>
           <h2 className="text-white mb-4">Liens utiles</h2>
           <ul className="flex flex-col gap-2 text-white/80 text-sm">
-            <li><a href="/cv.pdf" download>Télécharger cv</a></li>
+            <li><a href="/CV_MAKANAGA_ETCHOU_WEN_JOANEL.pdf" download>Télécharger cv</a></li>
             <li><a href="#projets">projets</a></li>
             <li><a href="#contacts">Contacts</a></li>
           </ul>
