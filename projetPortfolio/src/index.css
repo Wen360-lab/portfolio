@@ -11,20 +11,28 @@
   --navy: #023047;
   --yellow: #FFB703;
   --orange: #FB8500;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #666666;
+  --dark: var(--navy);
+  --titre-hero: var(--blue-light);
 
-  /* Rôles sémantiques (basés sur la palette) */
+  /* Rôles sémantiques */
   --bg: var(--blue-light);
+  --surface: #FFFFFF;
   --bg-dark: var(--navy);
   --accent: var(--orange);
   --accent-secondary: var(--yellow);
 
   --text: #FFFFFF;
-  --text-dark: var(--navy);
+  --text-dark: var(--blue-light);
   --text-h: #f3f4f6;
 
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
+
+  /* Les polices de la page */
   --sans: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: 'Sora', system-ui, 'Segoe UI', Roboto, sans-serif;
   --nav-font: 'Montserrat Alternates', sans-serif;
@@ -46,15 +54,23 @@
   }
 }
 
+
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: var(--blue-light);
+    --bg: var(--navy);
+    --surface: #000000;
+    --gray: #E8F4FA;
+    --dark: #E8F4FA;
+    /* --navy: #E8F4FA; */
+    --blue-light: var(--navy); 
+    --titre-hero: var(--teal);
     --bg-dark: var(--navy);
     --accent: var(--orange);
     --accent-secondary: var(--yellow);
     --text: #FFFFFF;
-    --text-dark: var(--navy);
-    --text-h: #f3f4f6;
+    --text-dark: var(--teal);   /* redevient #8ECAE6, lisible sur fond sombre */
+    --text-h: var(--teal);      /* titres -> blue-light, comme tu l'avais décidé */
     --shadow:
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
@@ -109,15 +125,19 @@ p {
   margin: 0;
 }
 
+
+
 @theme {
   --font-nav: 'Montserrat Alternates', sans-serif;
   --font-heading: 'Sora', system-ui, sans-serif;
-
-  --color-blue-light: #8ECAE6;
-  --color-teal: #219EBC;
-  --color-navy: #023047;
-  --color-yellow: #FFB703;
-  --color-orange: #FB8500;
+  --color-blue-light: var(--blue-light); /* au lieu de #8ECAE6 en dur */
+  --color-teal: var(--teal);
+  --color-navy: var(--navy);
+  --color-yellow: var(--yellow);
+  --color-orange: var(--orange);
+  --color-white: var(--white);
+  --color-black: var(--black);
+  --color-gray: var(--gray);
 
   --color-accent: var(--color-orange);
   --color-text-dark: var(--color-navy);

@@ -63,7 +63,7 @@ export default function Contact() {
         </div>
 
       {/* Bloc blanc avec les 3 contacts */}
-      <div className="bg-white px-6 py-16">
+      <div className="bg-(--surface) px-6 py-16">
         <div className="flex flex-col md:flex-row gap-8 justify-center text-center">
           {contacts.map((contact, index) => {
             const Icon = contact.icon
@@ -77,8 +77,8 @@ export default function Contact() {
                 transition={{ duration: 0.5, delay: index * 0.15 }}
               >
                 <Icon size={32} className="text-accent" />
-                <h2 className="text-navy">{contact.titre}</h2>
-                <p className="text-gray-500 text-sm">{contact.texte}</p>
+                <h2 className="text-gray">{contact.titre}</h2>
+                <p className="text-gray text-sm">{contact.texte}</p>
               </motion.div>
             )
           })}

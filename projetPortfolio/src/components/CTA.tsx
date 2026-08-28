@@ -4,7 +4,7 @@ const BASE = import.meta.env.BASE_URL
 
 export default function CTA() {
     return (
-        <section className='w-full flex flex-col md:flex-row gap-10 justify-center items-center bg-navy p-6'>
+        <section className='w-full flex flex-col md:flex-row gap-10 justify-center items-center bg-(--navy) p-6'>
              {/* La section de droite : Photode profil */}
             <motion.div 
                 className="bg-accent md:w-auto rounded-2xl"

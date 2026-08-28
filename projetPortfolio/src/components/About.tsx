@@ -8,13 +8,13 @@ const BASE = import.meta.env.BASE_URL
 
 export default function About() {
     return (
-        <section id="apropos" className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-35 bg-white px-6 py-6 w-full">
+        <section id="apropos" className="flex flex-col-reverse md:flex-row items-center justify-center md:gap-35 bg-(--surface) px-6 py-6 w-full">
             {/* La section de gauche : Titre + Description + CTA */}
             <div className="flex flex-col w-full items-start md:w-1/2 h-full">
 
             {/* A propos de moi : le titre */}
                 <motion.p 
-                    className="text-blue-light text-4xl text-center pt-7 pb-12 md:text-left"
+                    className="text-(--titre-hero) text-4xl text-center pt-7 pb-12 md:text-left"
                     initial={{opacity:0, y:20}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{ once: true }}
@@ -25,7 +25,7 @@ export default function About() {
 
                 {/* Mon nom complet */}
                 <motion.p 
-                    className="text-yellow text-3xl text-left font-nav mb-10 font-extrabold"
+                    className="text-accent text-3xl text-left font-nav mb-10 font-extrabold"
                     initial={{opacity:0, y:20}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{ once: true }}
@@ -37,7 +37,7 @@ export default function About() {
 
                 {/* La description */}
                 <motion.p 
-                    className='pt-2 pb-2 text-gray-500 text-left font-nav flex md:pt-7 md:pb-7'
+                    className='pt-2 pb-2 text-gray text-left font-nav flex md:pt-7 md:pb-7'
                     initial={{opacity:0, y:20}}
                     whileInView={{opacity:1, y:0}}
                     viewport={{ once: true }}
@@ -57,7 +57,7 @@ export default function About() {
                 </div>
 
                 {/* La ligne qui les séparent (BBouton et Stats) */}
-                <hr className='border-gray-300 mt-10 w-full'/>
+                <hr className='border-gray/50 mt-10 w-full'/>
 
                 {/* Le composant des statistiques */}
                 <Stats/>

@@ -31,7 +31,7 @@ const projects = [
 
 export default function Projets() {
   return (
-    <section id="projets" className="bg-white px-6 py-16 text-center">
+    <section id="projets" className="bg-(--surface) px-6 py-16 text-center">
             
         <motion.h1
             className="text-teal pb-12"
@@ -59,8 +59,8 @@ export default function Projets() {
                 className="w-full md:w-1/2 h-auto object-cover p-6"
                 />
                 <div className="p-6 md:w-1/2">
-                    <h2 className="text-navy mb-2">{project.titre}</h2>
-                    <p className="text-navy/80 mb-4">{project.description}</p>
+                    <h2 className="text-(--dark) mb-2">{project.titre}</h2>
+                    <p className="text-(--dark) mb-4">{project.description}</p>
                 
                     <a href={project.link} 
                         target="_blank" rel="noopener noreferrer"

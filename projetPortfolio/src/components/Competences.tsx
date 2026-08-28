@@ -25,14 +25,14 @@ export default function Competences() {
             >
                 <h2 className="text-teal mb-4">Compétences techniques</h2>
 
-                <p className="font-nav font-semibold text-white">Développement Front-end</p>
+                <p className="font-nav font-semibold text-teal">Développement Front-end</p>
                 <p className="text-white/80 mb-4">
                     Conception et intégration d'interfaces web modernes, responsives et animées.
                     Technologies maîtrisées : React • Next.js • TypeScript • Tailwind CSS
                 </p>
 
                 <br />
-                <p className="font-nav font-semibold text-white">Outils de développement</p>
+                <p className="font-nav font-semibold text-teal">Outils de développement</p>
                 <p className="text-white/80">
                     Utilisation de Git et GitHub pour le versioning, VS Code comme environnement
                     principal, et Figma pour la conception de maquettes.
@@ -49,28 +49,28 @@ export default function Competences() {
             >
                 <h2 className="text-teal mb-4">Compétences transversales et méthodologies</h2>
 
-                <p className="font-nav font-semibold text-white">Veille technologique</p>
+                <p className="font-nav font-semibold text-teal">Veille technologique</p>
                 <p className="text-white/80 mb-4">
                     Aptitude à apprendre en continu et à me tenir à jour sur les nouvelles
                     technologies front-end.
                 </p>
                 <br />
 
-                <p className="font-nav font-semibold text-white">Gestion de projets</p>
+                <p className="font-nav font-semibold text-teal">Gestion de projets</p>
                 <p className="text-white/80 mb-4">
                     Rigoureux et méthodique, j'adopte les méthodologies agiles sur l'ensemble
                     de mes projets.
                 </p>
 
                 <br />
-                <p className="font-nav font-semibold text-white">Accessibilité</p>
+                <p className="font-nav font-semibold text-teal">Accessibilité</p>
                 <p className="text-white/80 mb-4">
                     Je conçois des sites performants et accessibles à tous, en respectant
                     les normes établies par le W3C.
                 </p>
                 <br />
 
-                <p className="font-nav font-semibold text-white">Sécurité web</p>
+                <p className="font-nav font-semibold text-teal">Sécurité web</p>
                 <p className="text-white/80">
                     La sécurité reste une priorité constante dans mes développements.
                 </p>
@@ -86,19 +86,19 @@ export default function Competences() {
             >
                 <h2 className="text-teal mb-4">Qualités personnelles</h2>
 
-                <p className="font-nav font-semibold text-white">Résolution de problèmes</p>
+                <p className="font-nav font-semibold text-teal">Résolution de problèmes</p>
                 <p className="text-white/80 mb-4">
                     Bonne capacité d'analyse et de recherche de solutions.
                 </p>
                 <br />
 
-                <p className="font-nav font-semibold text-white">Curiosité et adaptabilité</p>
+                <p className="font-nav font-semibold text-teal">Curiosité et adaptabilité</p>
                 <p className="text-white/80 mb-4">
                     Un goût profond pour l'apprentissage de nouvelles technologies.
                 </p>
                 <br />
 
-                <p className="font-nav font-semibold text-white">Communication et empathie</p>
+                <p className="font-nav font-semibold text-teal">Communication et empathie</p>
                 <p className="text-white/80">
                     J'aime travailler en équipe et être à l'écoute des besoins réels
                     de mes clients.

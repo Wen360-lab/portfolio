@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-white/70 backdrop-blur-md border-b border-white/20 w-full shadow">
+    <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-(--surface)/70 backdrop-blur-md border-b border-white/20 w-full shadow">
 
       {/* Logo */}
       <img src={`${BASE}static/icones/Logo.svg`} alt="Logo PW" className="h-15 w-40" />
