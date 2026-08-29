@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FiMenu, FiX } from 'react-icons/fi'
+import ThemeToggle from './ThemeToggle'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -32,6 +33,8 @@ export default function Header() {
         Téléchargez mon CV
       </a>
 
+      <ThemeToggle/>
+
       {/* Bouton burger - visible uniquement sur mobile */}
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -43,7 +46,7 @@ export default function Header() {
 
       {/* Menu mobile déroulant */}
       {isOpen && (
-        <nav className="absolute top-full left-0 w-full bg-white/70 shadow lg:hidden">
+        <nav className="absolute top-full left-0 w-full bg-(--surface)/70 shadow lg:hidden">
           <ul className="flex flex-col gap-4 p-6 text-sm font-medium font-nav text-teal">
             <li className="hover:text-orange duration-300"><a href="#accueil" onClick={() => setIsOpen(false)}>Accueil</a></li>
             <li className="hover:text-orange duration-300"><a href="#apropos" onClick={() => setIsOpen(false)}>À propos</a></li>
